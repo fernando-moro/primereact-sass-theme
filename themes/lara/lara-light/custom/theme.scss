@@ -1,0 +1,29 @@
+// Cor Base: #098995
+$primaryColor: #098995 !default;
+
+// Cor Mais Clara: Um tom mais claro e menos saturado
+$primaryLightColor: #58c0c8 !default; // H=186°, S=57%, L=57%
+
+// Cor Mais Escura: Um tom mais escuro e mais saturado
+$primaryDarkColor: #006b74 !default; // H=186°, S=100%, L=23%
+
+// Cor Ainda Mais Escura: Para fundos de maior contraste ou textos
+$primaryDarkerColor: #014c51 !default; // H=186°, S=97%, L=16%
+
+// Cor do Texto Principal: Branco é a melhor opção para contraste contra tons de ciano-esverdeado escuros.
+$primaryTextColor: #ffffff !default;
+
+// Fundo de Destaque: Um tom muito claro/pálido da cor primária.
+// Usando $primaryLightColor (ou um tom ainda mais claro) para um fundo sutil.
+$highlightBg: #e1f5f7 !default; // Um tom quase branco com um toque de ciano
+
+// Cor do Texto de Destaque: O tom mais escuro da paleta para alto contraste no fundo claro.
+$highlightTextColor: $primaryDarkerColor !default;
+
+// Fundo de Foco/Hover (Transparência da cor primária)
+$highlightFocusBg: rgba($primaryColor, 0.24) !default;
+
+@import "../_variables";
+@import "./_fonts";
+@import "../../../../theme-base/_components";
+@import "../_extensions";
